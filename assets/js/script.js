@@ -62,3 +62,4 @@ $( function() {
      $($(this).find('td')[0]).html(i+1);          
     });
     });
+
