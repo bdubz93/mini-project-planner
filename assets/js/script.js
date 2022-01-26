@@ -1,3 +1,18 @@
+//Date and time
+var datetime = null,
+        date = null;
+
+var update = function () {
+    date = moment(new Date())
+    datetime.html(date.format('dddd, MMMM Do YYYY, h:mm:ss a'));
+};
+
+$(document).ready(function(){
+    datetime = $('#datetime')
+    update();
+    setInterval(update, 1000);
+});
+
 // Opens Modal on click of "start new project" button
 $(document).ready(function(){
   $("#modBtn").click(function(){
@@ -16,7 +31,7 @@ $('#saveProj').click(function(e) {
 
 //Date picker function
 $( function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({ minDate: 0});
   } );
 
 
