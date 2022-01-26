@@ -24,7 +24,6 @@ $(document).ready(function(){
 // Closes modal on click of "save project" button
 $('#saveProj').click(function(e) {
   e.preventDefault();
-  // Coding
   $('#startNew').modal('toggle');
   return false;
 });
