@@ -1,5 +1,7 @@
-body {
-    font-family: 'Titillium Web', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
   }
   
