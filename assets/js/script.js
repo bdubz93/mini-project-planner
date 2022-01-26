@@ -16,7 +16,7 @@ $(document).ready(function(){
 // Opens Modal on click of "start new project" button
 $(document).ready(function(){
   $("#modBtn").click(function(){
-    $("#exampleModal").modal();
+    $("#startNew").modal();
   });
 });
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
 $('#saveProj').click(function(e) {
   e.preventDefault();
   // Coding
-  $('#exampleModal').modal('toggle');
+  $('#startNew').modal('toggle');
   return false;
 });
 

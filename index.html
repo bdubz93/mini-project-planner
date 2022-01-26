@@ -13,9 +13,10 @@
 </head>
 
 <body>
-  <div class="jumbotron jumbotron-fluid bg-dark ">
+  <div class="jumbotron jumbotron-fluid bg-dark">
     <div class="container">
       <h1 class="display-4 text-light">Project Planner</h1>
+      <h3 class="text-light">Current Time & Date</h3>
       <p class="lead text-light" id="datetime"></p>
     </div>
   </div>
@@ -30,7 +31,7 @@
           <p class="card-text">Est. Total Earned is calculated based off of an 8 hour day</p>
           <!-- Button trigger modal -->
           <button type="button" id="modBtn" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
+            data-bs-target="#startNew">
             Start a New Project
           </button>
 
@@ -38,7 +39,7 @@
 
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          <div class="modal fade" id="startNew" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content bg-dark">
@@ -63,7 +64,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                      <label class="control-label">Hourly Wage</label>
+                      <label class="control-label">Hourly Rate ($)</label>
                       <div>
                         <input type="text" class="form-control input-lg" id="project_wage">
                       </div>
@@ -95,11 +96,11 @@
           <tr>
             <th scope="col">Project Name</th>
             <th scope="col">Project Type</th>
-            <th scope="col">Hourly Wage</th>
+            <th scope="col">Hourly Rate ($)</th>
             <th scope="col">Due Date</th>
             <th scope="col">Days Until Due Date</th>
-            <th scope="col">Est. Total Earned</th>
-            <th scope="col">Clear</th>
+            <th scope="col">Est. Total Earned ($)</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
